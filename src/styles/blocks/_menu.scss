@@ -15,6 +15,9 @@
     line-height: 33px;
     color: $color-light;
     text-decoration: none;
-  }
 
+    &:hover {
+      color: $color-accent;
+    }
+  }
 }
