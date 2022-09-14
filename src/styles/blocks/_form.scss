@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 66.66%;
+  margin: 70px auto 0;
+  border: 1px solid #000;
+}
+
+.form-field {
+  flex-basis: 100%;
+  padding: 0 $gap-half;
+  margin-bottom: 30px;
+
+  // &:first-child {
+
+  // }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-field-half {
+  flex-basis: 50%;
+}
+
+.form-label {
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-accent;
+}
+
+.form-input,
+.form-text {
+  width: 100%;
+  margin-top: 5px;
+  padding: 20px;
+  color: $color-dark;
+  font-family: $font;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: $color-light;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-text {
+  height: 167px;
+  resize: vertical;
+}
+
+.form-check-label {
+  font-size: 20px;
+  line-height: 27px;
+}
