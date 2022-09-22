@@ -1,3 +1,20 @@
 .footer {
-  color: red;
+  padding: 30px 0;
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+.footer-inner {
+  @include inner;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 20px;
+  line-height: 27px;
 }

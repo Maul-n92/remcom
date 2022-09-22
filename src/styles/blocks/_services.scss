@@ -1,6 +1,14 @@
 .services {
   padding: 100px 0;
   background-color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 70px 0 88px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 50px 0;
+  }
 }
 
 .services-inner {
@@ -9,4 +17,32 @@
 
 .services-title {
   @include section-title;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: -$gap-half;
+  margin-right: -$gap-half;
+}
+
+.services-item {
+  flex-basis: 50%;
+  padding: 0 $gap-half;
+  margin-top: 50px;
+}
+
+.services-caption {
+  margin-bottom: 30px;
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.services-text {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 38px;
 }

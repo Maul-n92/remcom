@@ -1,0 +1,12 @@
+.reviews {
+  padding: 140px 0 130px;
+  background-color: rgba($color-light, .2);
+}
+
+.reviews-inner {
+  @include inner;
+}
+
+.reviews-title {
+  @include section-title;
+}

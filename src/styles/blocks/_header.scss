@@ -4,7 +4,16 @@
   top: 0;
   z-index: 1000;
   width: 100%;
+  padding: 26px 0;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 28px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 4px 0;
+  }
 }
 
 .header-inner {
@@ -18,4 +27,43 @@
 
 .header-logo {
   margin-right: auto;
+  font-size: 42px;
+  line-height: 49px;
+  color: $color-light;
+  font-family: $font-title;
+  font-weight: 300;
+  text-decoration: none;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.header-phone {
+  margin-left: 100px;
+  font-size: 24px;
+  line-height: 33px;
+  color: $color-light;
+  text-decoration: none;
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.header-burger {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: 35px;
+  }
 }
