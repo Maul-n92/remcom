@@ -12,9 +12,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column-reverse;
+  }
 }
 
 .footer-copyright {
   font-size: 20px;
   line-height: 27px;
+
+  @media (max-width: $mobile-max) {
+    margin-top: 10px;
+  }
 }

@@ -4,16 +4,24 @@
   width: 66.66%;
   margin: 70px auto 0;
   border: 1px solid #000;
+
+  @media (max-width: $tablet-max) {
+    width: auto;
+    margin-top: 60px;
+    margin-left: -$gap-half;
+    margin-right: -$gap-half;
+  }
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    margin-top: 30px;
+  }
 }
 
 .form-field {
   flex-basis: 100%;
   padding: 0 $gap-half;
   margin-bottom: 30px;
-
-  // &:first-child {
-
-  // }
 
   &:last-child {
     margin-bottom: 0;
