@@ -1,43 +1,20 @@
-let petNames = ['Gans', 'Fiona', 'Kesha', 'Ryan'];
+$(document).ready(function(){
 
-console.log(  petNames  );
+  // let isClose = true;
 
-for (let i = 0; i < petNames.length; i++) {
-  console.log( petNames[i] );
+  $('.js-header-burger').on('click', function() {
 
-  printHello(petNames[i]);
+    $('.js-menu').slideToggle();
 
-  if (petNames[i].length < 5) {
-    console.log('Name: ' + petNames[i] + ' is short!');
-  } else {
-    console.log('Name: ' + petNames[i] + ' is long!');
-  }
+    // if (isClose) {
+    //   $('.js-menu').slideDown();
+    //   isClose = false;
+    // } else {
+    //   $('.js-menu').slideUp();
+    //   isClose = true;
+    // }
 
-}
-
-
-
-
-let myName = ' ';
-
-console.log(myName.length);
+  });
 
 
-if (myName) {
-  console.log('Hello, ' + myName);
-} else {
-  console.log('Hello, tovarishc');
-}
-
-
-function printHello(name) {
-  if (name) {
-    console.log('Hello, ' + name);
-  } else {
-    console.log('Hello, tovarishc');
-  }
-}
-
-printHello();
-printHello('Enot');
-
+});
