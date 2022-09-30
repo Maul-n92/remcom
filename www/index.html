@@ -1,175 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RemCom | Главная</title>
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <div class="header-wrap">
-          <a href="index.html" class="header-logo">RemCom</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RemCom | Главная</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
 
-          <nav class="menu js-menu">
-            <ul>
-              <li><a href="reviews.html"> Отзывы </a></li>
-              <li><a href="faq.html"> FAQ </a></li>
-              <li><a href="contacts.html"> Контакты </a></li>
-              <li><a href="works.html"> Наши работы </a></li>
-            </ul>
-          </nav>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="header-logo">RemCom</a>
 
-          <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
-
-          <button class="header-burger js-header-burger">menu</button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="promo">
-        <div class="promo-inner">
-          <div class="promo-wrap">
-            <div class="promo-desc">
-              <h1 class="promo-title">
-                <span>RemCom</span>
-                Ремонт мелкой и крупной бытовой техники в Санкт-Петербурге
-              </h1>
-              <a href="#" class="btn">Оставить заявку</a>
-            </div>
-            <div class="promo-visual">
-              <div class="promo-img-wrap">
-                <img
-                  src="images/promo-img.jpg"
-                  alt="Двое смотрят как третий работает"
-                  class="promo-img"
-                />
-                <p class="promo-img-desc">Хлопчики работают</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="services">
-        <div class="services-inner">
-          <h2 class="services-title">Что мы ремонтируем</h2>
-          <div class="services-list">
-            <div class="services-item">
-              <i class="services-icon"></i>
-              <h3 class="services-caption">Кухонную технику</h3>
-              <p class="services-text">
-                Холодильники, микроволновки, Духовые шкафы, кухонные комбайны и
-                т.д.
-              </p>
-            </div>
-            <div class="services-item">
-              <i class="services-icon"></i>
-              <h3 class="services-caption">Смартфоны</h3>
-              <p class="services-text">
-                Смартфоны и планшеты Apple, Samsung, Huawey, Honor, Xiaomi, Oppo
-                и многие другие модели
-              </p>
-            </div>
-            <div class="services-item">
-              <i class="services-icon"></i>
-              <h3 class="services-caption">Теле и аудио</h3>
-              <p class="services-text">
-                Современные и не очень телефизоры, акустические системы, в том
-                числе HiFi класса, ресиверы и проигрыватели грампластинок
-              </p>
-            </div>
-            <div class="services-item">
-              <i class="services-icon"></i>
-              <h3 class="services-caption">Деревянную мебель</h3>
-              <p class="services-text">
-                Мебель из массива дерева - стулья, табуреты, шкафы, тумбы,
-                секретеры и кабинеты.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="order">
-        <div class="order-inner">
-          <h2 class="order-title">Заявка на ремонт</h2>
-
-          <form action="" class="form">
-            <div class="form-field form-field-half">
-              <label for="name" class="form-label">Имя</label>
-              <input name="name" id="name" type="text" class="form-input" />
-            </div>
-            <div class="form-field form-field-half">
-              <label for="phone" class="form-label">Телефон</label>
-              <input name="phone" id="phone" type="tel" class="form-input" />
-            </div>
-            <div class="form-field">
-              <label for="message" class="form-label">Что ремонтируем?</label>
-              <textarea
-                name="message"
-                id="message"
-                class="form-text"
-              ></textarea>
-            </div>
-            <div class="form-field">
-              <input
-                type="checkbox"
-                name="confirm"
-                id="confirm"
-                class="form-checkbox"
-              />
-              <label for="confirm" class="form-check-label"
-                >Даю согласие на обработку персональных данных с соответствии с
-                политикой обработки персональных данных</label
-              >
-            </div>
-            <div class="form-field">
-              <button class="btn btn-form" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-wrap">
-          <p class="footer-copyright">Ничего не защищено</p>
-          <ul class="social">
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-                title="Instagram"
-                style="background-image: url(images/icon-insta.svg)"
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-                title="Facebook"
-                style="background-image: url(images/icon-fb.svg)"
-              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href="#"
-                class="social-link"
-                title="Telegram"
-                style="background-image: url(images/icon-telega.svg)"
-              ></a>
-            </li>
+        <nav class="menu js-menu">
+          <ul>
+            <li><a href="reviews.html"> Отзывы </a></li>
+            <li><a href="faq.html"> FAQ </a></li>
+            <li><a href="contacts.html"> Контакты </a></li>
+            <li><a href="works.html"> Наши работы </a></li>
           </ul>
+        </nav>
+
+        <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
+
+        <button class="header-burger js-header-burger">menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="promo">
+      <div class="promo-inner">
+        <div class="promo-wrap">
+          <div class="promo-desc">
+            <h1 class="promo-title">
+              <span>RemCom</span>
+              Ремонт мелкой и крупной бытовой техники в Санкт-Петербурге
+            </h1>
+            <a href="#" class="btn">Оставить заявку</a>
+          </div>
+          <div class="promo-visual">
+            <div class="promo-img-wrap">
+              <img src="images/promo-img.jpg" alt="Двое смотрят как третий работает" class="promo-img" />
+              <p class="promo-img-desc">Хлопчики работают</p>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="scripts/jquery-3.6.1.min.js"></script>
-    <script src="scripts/script.js"></script>
-  </body>
+    <section class="services">
+      <div class="services-inner">
+        <h2 class="services-title">Что мы ремонтируем</h2>
+        <div class="services-list">
+          <div class="services-item">
+            <i class="services-icon"></i>
+            <h3 class="services-caption">Кухонную технику</h3>
+            <p class="services-text">
+              Холодильники, микроволновки, Духовые шкафы, кухонные комбайны и
+              т.д.
+            </p>
+          </div>
+          <div class="services-item">
+            <i class="services-icon"></i>
+            <h3 class="services-caption">Смартфоны</h3>
+            <p class="services-text">
+              Смартфоны и планшеты Apple, Samsung, Huawey, Honor, Xiaomi, Oppo
+              и многие другие модели
+            </p>
+          </div>
+          <div class="services-item">
+            <i class="services-icon"></i>
+            <h3 class="services-caption">Теле и аудио</h3>
+            <p class="services-text">
+              Современные и не очень телефизоры, акустические системы, в том
+              числе HiFi класса, ресиверы и проигрыватели грампластинок
+            </p>
+          </div>
+          <div class="services-item">
+            <i class="services-icon"></i>
+            <h3 class="services-caption">Деревянную мебель</h3>
+            <p class="services-text">
+              Мебель из массива дерева - стулья, табуреты, шкафы, тумбы,
+              секретеры и кабинеты.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order">
+      <div class="order-inner">
+        <h2 class="order-title">Заявка на ремонт</h2>
+
+        <form action="" class="form">
+          <div class="form-field form-field-half">
+            <label for="name" class="form-label">Имя</label>
+            <input name="name" id="name" type="text" class="form-input" />
+          </div>
+          <div class="form-field form-field-half">
+            <label for="phone" class="form-label">Телефон</label>
+            <input name="phone" id="phone" type="tel" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="message" class="form-label">Что ремонтируем?</label>
+            <textarea name="message" id="message" class="form-text"></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="confirm" id="confirm" class="form-checkbox" />
+            <label for="confirm" class="form-check-label">Даю согласие на обработку персональных данных с соответствии с
+              политикой обработки персональных данных</label>
+          </div>
+          <div class="form-field">
+            <button class="btn btn-form" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <p class="footer-copyright">Ничего не защищено</p>
+        <ul class="social">
+          <li class="social-item">
+            <a href="#" class="social-link" title="Instagram" style="background-image: url(images/icon-insta.svg)"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="Facebook" style="background-image: url(images/icon-fb.svg)"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="Telegram" style="background-image: url(images/icon-telega.svg)"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/jquery-3.6.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>

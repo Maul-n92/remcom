@@ -1,102 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RemCom | Главная</title>
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <div class="header-wrap">
-          <a href="index.html" class="header-logo">RemCom</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RemCom | Отзывы</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
 
-          <nav class="menu">
-            <ul>
-              <li><a href="reviews.html"> Отзывы </a></li>
-              <li><a href="faq.html"> FAQ </a></li>
-              <li><a href="contacts.html"> Контакты </a></li>
-              <li><a href="works.html"> Наши работы </a></li>
-            </ul>
-          </nav>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="index.html" class="header-logo">RemCom</a>
 
-          <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
-
-          <button class="header-burger">menu</button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="reviews">
-        <div class="reviews-inner">
-          <h1 class="reviews-title">Отзывы о нашей работе</h1>
-
-        </div>
-      </section>
-
-      <section class="order">
-        <div class="order-inner">
-          <h2 class="order-title">Заявка на ремонт</h2>
-
-          <form action="" class="form">
-            <div class="form-field form-field-half">
-              <label for="name" class="form-label">Имя</label>
-              <input name="name" id="name" type="text" class="form-input" />
-            </div>
-            <div class="form-field form-field-half">
-              <label for="phone" class="form-label">Телефон</label>
-              <input name="phone" id="phone" type="tel" class="form-input" />
-            </div>
-            <div class="form-field">
-              <label for="message" class="form-label">Что ремонтируем?</label>
-              <textarea
-                name="message"
-                id="message"
-                class="form-text"
-              ></textarea>
-            </div>
-            <div class="form-field">
-              <input
-                type="checkbox"
-                name="confirm"
-                id="confirm"
-                class="form-checkbox"
-              />
-              <label for="confirm" class="form-check-label"
-                >Даю согласие на обработку персональных данных с соответствии с
-                политикой обработки персональных данных</label
-              >
-            </div>
-            <div class="form-field">
-              <button class="btn btn-form" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-wrap">
-          <p class="footer-copyright">Ничего не защищено</p>
-          <ul class="social">
-            <li class="social-item">
-              <a href="#" class="social-link" title="Instagram" style="background-image: url(images/icon-insta.svg);"></a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link" title="Facebook" style="background-image: url(images/icon-fb.svg);"></a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link" title="Telegram" style="background-image: url(images/icon-telega.svg);"></a>
-            </li>
+        <nav class="menu js-menu">
+          <ul>
+            <li><a href="reviews.html"> Отзывы </a></li>
+            <li><a href="faq.html"> FAQ </a></li>
+            <li><a href="contacts.html"> Контакты </a></li>
+            <li><a href="works.html"> Наши работы </a></li>
           </ul>
+        </nav>
+
+        <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
+
+        <button class="header-burger js-header-burger">menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="reviews">
+      <div class="reviews-inner">
+        <h1 class="reviews-title">Отзывы о нашей работе</h1>
+
+        <div class="reviews-wrap">
+          <div class="reviews-item">
+            <img src="images/ava-panda.jpg" alt="" class="reviews-ava">
+            <div class="reviews-text">
+              <strong class="reviews-name">Инна</strong>
+              <blockquote class="reviews-quote">
+                “Но внедрение современных методик представляет собой интересный эксперимент проверки вывода текущих
+                активов. Некоторые особенности внутренней политики разоблачены.”
+              </blockquote>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="images/ava-jekki.png" alt="" class="reviews-ava">
+            <div class="reviews-text">
+              <strong class="reviews-name">Джекки</strong>
+              <blockquote class="reviews-quote">
+                “Но внедрение современных методик представляет собой интересный эксперимент проверки”
+              </blockquote>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="images/ava-valdo.png" alt="" class="reviews-ava">
+            <div class="reviews-text">
+              <strong class="reviews-name">Вальдемар</strong>
+              <blockquote class="reviews-quote">
+                “Но внедрение современных методик представляет собой интересный эксперимент проверки вывода текущих
+                активов. Некоторые особенности.”
+              </blockquote>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="images/ava-ira.png" alt="" class="reviews-ava">
+            <div class="reviews-text">
+              <strong class="reviews-name">Ирина</strong>
+              <blockquote class="reviews-quote">
+                “Но внедрение современных методик представляет собой интересный эксперимент проверки вывода текущих
+                активов. Некоторые особенности внутренней политики разоблачены.”
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-btn">
+          <button class="btn">Еще отзывы</button>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="scripts/script.js"></script>
-  </body>
+    <section class="order">
+      <div class="order-inner">
+        <h2 class="order-title">Заявка на ремонт</h2>
+
+        <form action="" class="form">
+          <div class="form-field form-field-half">
+            <label for="name" class="form-label">Имя</label>
+            <input name="name" id="name" type="text" class="form-input" />
+          </div>
+          <div class="form-field form-field-half">
+            <label for="phone" class="form-label">Телефон</label>
+            <input name="phone" id="phone" type="tel" class="form-input" />
+          </div>
+          <div class="form-field">
+            <label for="message" class="form-label">Что ремонтируем?</label>
+            <textarea name="message" id="message" class="form-text"></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="confirm" id="confirm" class="form-checkbox" />
+            <label for="confirm" class="form-check-label">Даю согласие на обработку персональных данных с соответствии с
+              политикой обработки персональных данных</label>
+          </div>
+          <div class="form-field">
+            <button class="btn btn-form" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-wrap">
+        <p class="footer-copyright">Ничего не защищено</p>
+        <ul class="social">
+          <li class="social-item">
+            <a href="#" class="social-link" title="Instagram" style="background-image: url(images/icon-insta.svg)"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="Facebook" style="background-image: url(images/icon-fb.svg)"></a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link" title="Telegram" style="background-image: url(images/icon-telega.svg)"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/jquery-3.6.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>

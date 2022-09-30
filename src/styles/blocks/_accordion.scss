@@ -1,0 +1,31 @@
+.accordion {
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 8px rgba(212, 98, 64, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 30px;
+  font-family: $font-title;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+  border: none;
+  background-color: rgba(0, 0, 0 , 0);
+  cursor: pointer;
+}
+
+.accordion-text {
+  display: none;
+  padding: 0 30px 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}

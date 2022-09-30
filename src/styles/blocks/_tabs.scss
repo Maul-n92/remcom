@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.tabs-item {
+  margin: 0 30px;
+}
+
+.tabs-link {
+  font-size: 36px;
+  line-height: 49px;
+  text-decoration: none;
+  color: $color-dark;
+
+  &.active {
+    color: $color-accent;
+  }
+}
