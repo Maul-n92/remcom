@@ -68,7 +68,16 @@ $(document).ready(function(){
         $(this).hide();
       }
     });
-
-
   });
+
+
+
+  // Слик слайдер
+  $('.js-gallery-carousel').slick({
+    autoplay: false,
+    infinite: false,
+    dots: true
+  });
+
+
 });

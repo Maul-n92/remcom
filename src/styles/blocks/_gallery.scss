@@ -1,0 +1,64 @@
+.gallery {
+  padding: 130px 0;
+  background-color: $color-light;
+}
+
+.gallery-inner {
+  @include inner;
+}
+
+.gallery-title {
+  @include section-title;
+}
+
+.gallery-carousel {
+  padding: 0 40px;
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-accent;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-disabled {
+    background-color: gray;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      margin: 0 5px;
+    }
+
+    .slick-active button {
+      background-color: $color-dark;
+    }
+
+    button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid $color-dark;
+      font-size: 0;
+    }
+  }
+}
+
