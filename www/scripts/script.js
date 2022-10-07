@@ -80,4 +80,46 @@ $(document).ready(function(){
   });
 
 
+  // ajax хапрос отзывов
+  $('.js-reviews-btn').on('click', function(){
+    
+    $.ajax({
+      type: 'POST',
+      url: 'jsons/reviews.json',
+      data: 'count=2&sort=new',
+      success: function(responce) {
+        let html = createHtmlString(responce.reviews);
+        addToPage(html);
+      },
+      error: function() {
+        alert('Извини бро! Чет у нас ошибка - попробуй позже');
+      }
+    });
+
+
+  });
+
+
+  function createHtmlString(reviewsArray) {
+    let htmlString = '';
+
+    reviewsArray.forEach(function(review) {
+      htmlString = htmlString + `<div class="reviews-item">
+        <img src="${review.photoUrl}" alt="${review.photoAlt}" class="reviews-ava" />
+        <div class="reviews-text">
+          <strong class="reviews-name">${review.name}</strong>
+          <blockquote class="reviews-quote">
+            “${review.quote}”
+          </blockquote>
+        </div>
+      </div>`;
+    });
+
+    return htmlString;
+  }
+
+  function addToPage(string) {
+    $('.js-reviews-wrap').append(string);
+  }
+
 });

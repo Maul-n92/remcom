@@ -1,0 +1,16 @@
+{
+    "reviews": [
+        {
+            "photoUrl": "images/ava-jekki.png",
+            "photoAlt": "Alt for images",
+            "name": "Старуха Шапокляк",
+            "quote": "Стырила у Гены гармошку! Ломанная была - ребята починили. Спасибо! Но Гене не отдам!"
+        },
+        {
+            "photoUrl": "images/ava-panda.jpg",
+            "photoAlt": "Alt for images",
+            "name": "Железный Дровосек",
+            "quote": "Меня просто починили! Спасибо!"
+        }
+    ]
+}
